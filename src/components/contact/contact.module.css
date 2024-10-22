@@ -1,0 +1,160 @@
+.container{
+    padding: 40px;
+    width: 70%;
+    background-image: url('https://img.freepik.com/free-vector/abstract-business-professional-background-banner-design-multipurpose_1340-16856.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container_item{
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.box{
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.box1 a {
+    font-size: 180px;
+    color: #0088cc;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.box1 a:hover {
+    transform: scale(1.1);
+    animation: telegramColors 3s infinite alternate;
+}
+
+@keyframes telegramColors {
+    0% {
+        color: #0088cc;
+    }
+    50% {
+        color: #29b6f6;
+    }
+    100% {
+        color: #54a9eb;
+    }
+}
+
+.box2 a {
+    font-size: 180px;
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.box2 a:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.box3 a {
+    font-size: 180px;
+    color: red;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.box3 a:hover {
+    transform: scale(1.1);
+    animation: youtubeColors 3s infinite alternate;
+}
+
+@keyframes youtubeColors {
+    0% {
+        color: #FF0000;
+    }
+    50% {
+        color: #282828;
+    }
+    100% {
+        color: #FF0000;
+    }
+}
+
+.box4 a {
+    font-size: 180px;
+    color: #ff6b6b;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.box4 a:hover {
+    transform: scale(1.1);
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff6b6b;
+    }
+    25% {
+        color: #4ecdc4;
+    }
+    50% {
+        color: #45b7d1;
+    }
+    75% {
+        color: #f7b731;
+    }
+    100% {
+        color: #c72727;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .box a{
+        font-size: 150px;
+    }
+
+    .container{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .box1 a{
+        font-size: 100px;
+    }
+    .box2 a{
+        font-size: 100px;
+    }
+    .box3 a{
+        font-size: 100px;
+    }
+    .box4 a{
+        font-size: 100px;
+    }
+}
